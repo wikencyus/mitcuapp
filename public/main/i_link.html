@@ -1,0 +1,1296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link 
+      rel="icon" 
+      href="https://img.sanishtech.com/u/2a8c51e11b25cb8d981378842d52866c.png" 
+      type="image/png" 
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>linktree Mitcu</title>
+    <style>
+      /* Google Fonts */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        margin: 0;
+        position: relative;
+        background: #03050b;
+        opacity: 0;
+        animation: bodyFadeIn 0.5s ease forwards;
+      }
+
+      @keyframes bodyFadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      /* Background Titik-titik RGB */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+
+          /* TITIK MERAH */
+          radial-gradient(
+            circle at 5% 10%,
+            rgba(255, 50, 50, 0.4) 4px,
+            transparent 4px
+          ),
+          radial-gradient(
+            circle at 15% 25%,
+            rgba(255, 30, 30, 0.5) 6px,
+            transparent 6px
+          ),
+          radial-gradient(
+            circle at 25% 40%,
+            rgba(255, 70, 70, 0.3) 5px,
+            transparent 5px
+          ),
+          radial-gradient(
+            circle at 35% 55%,
+            rgba(255, 20, 20, 0.6) 7px,
+            transparent 7px
+          ),
+          radial-gradient(
+            circle at 45% 70%,
+            rgba(255, 90, 90, 0.4) 4px,
+            transparent 4px
+          ),
+          radial-gradient(
+            circle at 55% 85%,
+            rgba(255, 40, 40, 0.5) 8px,
+            transparent 8px
+          ),
+          radial-gradient(
+            circle at 65% 15%,
+            rgba(255, 60, 60, 0.4) 5px,
+            transparent 5px
+          ),
+          radial-gradient(
+            circle at 75% 30%,
+            rgba(255, 80, 80, 0.6) 6px,
+            transparent 6px
+          ),
+          radial-gradient(
+            circle at 85% 45%,
+            rgba(255, 50, 50, 0.5) 7px,
+            transparent 7px
+          ),
+          radial-gradient(
+            circle at 95% 60%,
+            rgba(255, 70, 70, 0.4) 5px,
+            transparent 5px
+          ),
+          /* TITIK HIJAU */
+          radial-gradient(
+              circle at 3% 92%,
+              rgba(50, 255, 50, 0.4) 6px,
+              transparent 6px
+            ),
+          radial-gradient(
+            circle at 12% 78%,
+            rgba(30, 255, 30, 0.5) 8px,
+            transparent 8px
+          ),
+          radial-gradient(
+            circle at 22% 63%,
+            rgba(70, 255, 70, 0.3) 7px,
+            transparent 7px
+          ),
+          radial-gradient(
+            circle at 32% 48%,
+            rgba(20, 255, 20, 0.6) 9px,
+            transparent 9px
+          ),
+          radial-gradient(
+            circle at 42% 33%,
+            rgba(90, 255, 90, 0.4) 5px,
+            transparent 5px
+          ),
+          radial-gradient(
+            circle at 52% 18%,
+            rgba(40, 255, 40, 0.5) 7px,
+            transparent 7px
+          ),
+          radial-gradient(
+            circle at 62% 3%,
+            rgba(60, 255, 60, 0.4) 6px,
+            transparent 6px
+          ),
+          radial-gradient(
+            circle at 72% 88%,
+            rgba(80, 255, 80, 0.6) 8px,
+            transparent 8px
+          ),
+          radial-gradient(
+            circle at 82% 73%,
+            rgba(50, 255, 50, 0.5) 5px,
+            transparent 5px
+          ),
+          radial-gradient(
+            circle at 92% 58%,
+            rgba(70, 255, 70, 0.4) 7px,
+            transparent 7px
+          ),
+          /* TITIK BIRU */
+          radial-gradient(
+              circle at 9% 82%,
+              rgba(50, 50, 255, 0.4) 7px,
+              transparent 7px
+            ),
+          radial-gradient(
+            circle at 19% 67%,
+            rgba(30, 30, 255, 0.5) 5px,
+            transparent 5px
+          ),
+          radial-gradient(
+            circle at 29% 52%,
+            rgba(70, 70, 255, 0.3) 9px,
+            transparent 9px
+          ),
+          radial-gradient(
+            circle at 39% 37%,
+            rgba(20, 20, 255, 0.6) 6px,
+            transparent 6px
+          ),
+          radial-gradient(
+            circle at 49% 22%,
+            rgba(90, 90, 255, 0.4) 8px,
+            transparent 8px
+          ),
+          radial-gradient(
+            circle at 59% 7%,
+            rgba(40, 40, 255, 0.5) 7px,
+            transparent 7px
+          ),
+          radial-gradient(
+            circle at 69% 92%,
+            rgba(60, 60, 255, 0.4) 6px,
+            transparent 6px
+          ),
+          radial-gradient(
+            circle at 79% 77%,
+            rgba(80, 80, 255, 0.6) 8px,
+            transparent 8px
+          ),
+          radial-gradient(
+            circle at 89% 62%,
+            rgba(50, 50, 255, 0.5) 5px,
+            transparent 5px
+          ),
+          radial-gradient(
+            circle at 99% 47%,
+            rgba(70, 70, 255, 0.4) 7px,
+            transparent 7px
+          );
+
+        background-size: 200% 200%;
+        background-repeat: repeat;
+        background-color: #03050b;
+        pointer-events: none;
+        z-index: -2;
+        animation:
+          moveDots 30s linear infinite alternate,
+          glowPulse 5s ease-in-out infinite;
+      }
+
+      @keyframes moveDots {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: 100% 100%;
+        }
+      }
+
+      @keyframes glowPulse {
+        0% {
+          opacity: 0.5;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0.5;
+        }
+      }
+
+      /* Gradient overlay */
+      body::after {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+          circle at 50% 50%,
+          transparent 30%,
+          rgba(3, 5, 11, 0.85) 100%
+        );
+        pointer-events: none;
+        z-index: -1;
+      }
+
+      container {
+        display: block;
+        width: 100%;
+        max-width: 420px;
+        z-index: 1;
+        position: relative;
+      }
+
+      /* ANIMASI BOX DISPLAY SAAT WEB DIBUKA */
+      .box-display {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 40px;
+        padding: 2rem 1.8rem;
+        box-shadow:
+          0 25px 50px -12px rgba(0, 0, 0, 0.5),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease;
+        animation:
+          boxPop 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+          boxGlow 3s ease-in-out 0.8s infinite,
+          float 6s ease-in-out 0.8s infinite;
+        transform-origin: center;
+        opacity: 0;
+      }
+
+      @keyframes boxPop {
+        0% {
+          opacity: 0;
+          transform: scale(0.3) translateY(100px) rotate(-10deg);
+        }
+        50% {
+          opacity: 0.8;
+          transform: scale(1.05) translateY(-10px) rotate(2deg);
+        }
+        75% {
+          transform: scale(0.98) translateY(5px) rotate(-1deg);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1) translateY(0) rotate(0);
+        }
+      }
+
+      @keyframes boxGlow {
+        0% {
+          box-shadow:
+            0 25px 50px -12px rgba(0, 0, 0, 0.5),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+        50% {
+          box-shadow:
+            0 25px 60px -8px rgba(168, 85, 247, 0.5),
+            inset 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        100% {
+          box-shadow:
+            0 25px 50px -12px rgba(0, 0, 0, 0.5),
+            inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+
+      .box-display:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow:
+          0 30px 60px -15px rgba(168, 85, 247, 0.4),
+          inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+      }
+
+      .logo-img {
+        margin-bottom: 1.5rem;
+        border-radius: 50%;
+        padding: 5px;
+        background: linear-gradient(135deg, #a78bfa, #ec4899);
+        animation:
+          rotateBorder 6px linear infinite,
+          logoPop 0.6s ease 0.3s backwards;
+      }
+
+      @keyframes logoPop {
+        0% {
+          transform: scale(0) rotate(-180deg);
+        }
+        100% {
+          transform: scale(1) rotate(0);
+        }
+      }
+
+      @keyframes rotateBorder {
+        0% {
+          background: linear-gradient(135deg, #a78bfa, #ec4899);
+        }
+        25% {
+          background: linear-gradient(225deg, #60a5fa, #a78bfa);
+        }
+        50% {
+          background: linear-gradient(315deg, #34d399, #60a5fa);
+        }
+        75% {
+          background: linear-gradient(45deg, #fbbf24, #34d399);
+        }
+        100% {
+          background: linear-gradient(135deg, #a78bfa, #ec4899);
+        }
+      }
+
+      .logo-img img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        display: block;
+        background-color: #0f172a;
+        border: 4px solid #0f172a;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+
+      .logo-img img:hover {
+        transform: scale(1.05);
+      }
+
+      .logo-name {
+        text-align: center;
+        margin-bottom: 1.8rem;
+        animation: slideUp 0.5s ease 0.4s backwards;
+      }
+
+      @keyframes slideUp {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .nickname p {
+        font-size: 2rem;
+        font-weight: 700;
+        background: linear-gradient(to right, #f0f9ff, #cbd5e1);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        letter-spacing: -0.5px;
+        line-height: 1.2;
+        text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+
+      .description p {
+        font-size: 1rem;
+        color: #a0aec0;
+        font-weight: 300;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 0.3rem 1rem;
+        border-radius: 50px;
+        display: inline-block;
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        margin-top: 0.3rem;
+      }
+
+      .icons {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center;
+        margin-bottom: 2.2rem;
+        font-size: 1.8rem;
+        flex-wrap: wrap;
+        animation: iconsPop 0.6s ease 0.5s backwards;
+      }
+
+      @keyframes iconsPop {
+        0% {
+          opacity: 0;
+          transform: scale(0);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+
+      .icons a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .icons i {
+        color: #94a3b8;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.3));
+      }
+
+      .icons i:hover {
+        color: white;
+        transform: translateY(-5px) scale(1.2);
+        filter: drop-shadow(0 10px 15px rgba(168, 85, 247, 0.4));
+      }
+
+      .icons a:nth-child(1):hover i {
+        color: #e1306c;
+      }
+      .icons a:nth-child(2):hover i {
+        color: #25f4ee;
+        text-shadow: 2px 2px 0 #fe2c55;
+      }
+      .icons a:nth-child(3):hover i {
+        color: #f0f6fc;
+      }
+      .icons a:nth-child(4):hover i {
+        color: #1db954;
+      }
+
+      .bttn {
+        display: flex;
+        flex-direction: column;
+        gap: 0.9rem;
+        width: 100%;
+        margin-bottom: 2.5rem;
+      }
+
+      .bttn button {
+        font-family: "Poppins", sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0.9rem 1.2rem;
+        border: none;
+        border-radius: 60px;
+        background: rgba(30, 41, 59, 0.8);
+        backdrop-filter: blur(5px);
+        color: #e2e8f0;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+        transition: all 0.25s ease;
+        position: relative;
+        overflow: hidden;
+        text-align: center;
+        letter-spacing: 0.3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        opacity: 0;
+        animation: buttonSlide 0.5s ease forwards;
+      }
+
+      .bttn button:nth-child(1) {
+        animation-delay: 0.6s;
+      }
+      .bttn button:nth-child(2) {
+        animation-delay: 0.7s;
+      }
+      .bttn button:nth-child(3) {
+        animation-delay: 0.8s;
+      }
+      .bttn button:nth-child(4) {
+        animation-delay: 0.9s;
+      }
+
+      @keyframes buttonSlide {
+        0% {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .bttn button i {
+        font-size: 1.2rem;
+        transition: transform 0.3s ease;
+      }
+
+      .bttn button::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        left: -60%;
+        width: 20%;
+        height: 200%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transform: rotate(25deg);
+        transition: left 0.5s ease;
+        z-index: 1;
+      }
+
+      .bttn button:hover {
+        background: #334155;
+        border-color: rgba(255, 255, 255, 0.3);
+        color: white;
+        transform: scale(1.03);
+        box-shadow: 0 10px 25px -5px rgba(124, 58, 237, 0.4);
+      }
+
+      .bttn button:hover::after {
+        left: 120%;
+      }
+
+      .bttn button:hover i {
+        transform: scale(1.2) rotate(5deg);
+      }
+
+      .bttn button:nth-child(1):hover {
+        background: linear-gradient(135deg, #2563eb, #1e40af);
+      }
+      .bttn button:nth-child(1):hover i {
+        color: #fbbf24;
+      }
+
+      .bttn button:nth-child(2):hover {
+        background: linear-gradient(135deg, #7e22ce, #6b21a5);
+      }
+      .bttn button:nth-child(2):hover i {
+        color: #a5f3fc;
+      }
+
+      .bttn button:nth-child(3):hover {
+        background: linear-gradient(135deg, #eab308, #ca8a04);
+        color: black;
+      }
+      .bttn button:nth-child(3):hover i {
+        color: #831843;
+      }
+
+      .bttn button:nth-child(4):hover {
+        background: linear-gradient(135deg, #5865f2, #404eed);
+      }
+      .bttn button:nth-child(4):hover i {
+        color: #ffffff;
+        filter: drop-shadow(0 0 5px #5865f2);
+      }
+
+      footer {
+        font-size: 0.8rem;
+        color: #64748b;
+        margin-top: 0.5rem;
+        text-align: center;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        opacity: 0;
+        animation: fadeIn 0.5s ease 1s forwards;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0.8;
+        }
+      }
+
+      footer:hover {
+        opacity: 1;
+      }
+
+      .icons a:nth-child(4) i {
+        transition: all 0.3s ease;
+      }
+
+      .icons a:nth-child(4):hover i {
+        filter: drop-shadow(0 0 10px #1db954);
+        animation: pulse 1s ease infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1) translateY(-5px);
+        }
+        50% {
+          transform: scale(1.1) translateY(-5px);
+        }
+        100% {
+          transform: scale(1) translateY(-5px);
+        }
+      }
+
+      /* CSS untuk Chat Box */
+      .chat-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(5px);
+        z-index: 1000;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      .chat-overlay.show {
+        display: flex;
+        animation: overlayFadeIn 0.3s ease forwards;
+      }
+
+      @keyframes overlayFadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .chat-container {
+        width: 90%;
+        max-width: 400px;
+        height: 600px;
+        background: rgba(20, 25, 35, 0.95);
+        backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 30px;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(168, 85, 247, 0.2);
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        transform: scale(0.9);
+        animation: chatPopIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+      }
+
+      @keyframes chatPopIn {
+        0% {
+          transform: scale(0.8) translateY(30px);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1) translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .chat-header {
+        padding: 20px;
+        background: rgba(168, 85, 247, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .chat-avatar {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #a78bfa, #ec4899);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        color: white;
+        animation: avatarPulse 2s infinite;
+      }
+
+      @keyframes avatarPulse {
+        0% {
+          box-shadow: 0 0 0 0 rgba(168, 85, 247, 0.7);
+        }
+        70% {
+          box-shadow: 0 0 0 10px rgba(168, 85, 247, 0);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(168, 85, 247, 0);
+        }
+      }
+
+      .chat-title {
+        flex: 1;
+      }
+
+      .chat-title h3 {
+        color: white;
+        font-size: 1.1rem;
+        margin-bottom: 4px;
+      }
+
+      .chat-status {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.8rem;
+        color: #4ade80;
+      }
+
+      .status-dot {
+        width: 8px;
+        height: 8px;
+        background: #4ade80;
+        border-radius: 50%;
+        animation: blink 1.5s infinite;
+      }
+
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+
+      .close-chat {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        border: none;
+        color: #94a3b8;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .close-chat:hover {
+        background: rgba(239, 68, 68, 0.2);
+        color: #ef4444;
+        transform: rotate(90deg);
+      }
+
+      .chat-messages {
+        flex: 1;
+        padding: 20px;
+        overflow-y: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .chat-messages::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      .chat-messages::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .chat-messages::-webkit-scrollbar-thumb {
+        background: rgba(168, 85, 247, 0.5);
+        border-radius: 10px;
+      }
+
+      .message {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        max-width: 80%;
+        animation: messageSlide 0.3s ease;
+      }
+
+      @keyframes messageSlide {
+        0% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .message.bot {
+        align-self: flex-start;
+      }
+
+      .message.user {
+        align-self: flex-end;
+        flex-direction: row-reverse;
+      }
+
+      .message-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #a78bfa, #ec4899);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        color: white;
+        flex-shrink: 0;
+      }
+
+      .message.user .message-avatar {
+        background: linear-gradient(135deg, #60a5fa, #3b82f6);
+      }
+
+      .message-content {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 10px 15px;
+        border-radius: 20px;
+        color: #e2e8f0;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        word-wrap: break-word;
+        max-width: auto;
+      }
+
+      .message.bot .message-content {
+        border-bottom-left-radius: 5px;
+        background: rgba(168, 85, 247, 0.15);
+        border: 1px solid rgba(168, 85, 247, 0.2);
+      }
+
+      .message.user .message-content {
+        border-bottom-right-radius: 5px;
+        background: rgba(96, 165, 250, 0.15);
+        border: 1px solid rgba(96, 165, 250, 0.2);
+      }
+
+      .message-time {
+        font-size: 0.7rem;
+        color: #64748b;
+        margin-top: 5px;
+        text-align: right;
+      }
+
+      .chat-input-area {
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.3);
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        gap: 10px;
+      }
+
+      .chat-input {
+        flex: 1;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 30px;
+        padding: 12px 20px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.9rem;
+        outline: none;
+        transition: all 0.3s ease;
+      }
+
+      .chat-input:focus {
+        border-color: #a78bfa;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 0 3px rgba(168, 85, 247, 0.2);
+      }
+
+      .chat-input::placeholder {
+        color: #64748b;
+      }
+
+      .send-btn {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #a78bfa, #ec4899);
+        border: none;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .send-btn:hover {
+        transform: scale(1.1) rotate(10deg);
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+      }
+
+      .typing-indicator {
+        display: flex;
+        gap: 5px;
+        padding: 10px 15px;
+        background: rgba(168, 85, 247, 0.15);
+        border-radius: 20px;
+        border-bottom-left-radius: 5px;
+        width: fit-content;
+        border: 1px solid rgba(168, 85, 247, 0.2);
+      }
+
+      .typing-dot {
+        width: 8px;
+        height: 8px;
+        background: #a78bfa;
+        border-radius: 50%;
+        animation: typingBounce 1.4s infinite;
+      }
+
+      .typing-dot:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .typing-dot:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes typingBounce {
+        0%, 60%, 100% {
+          transform: translateY(0);
+        }
+        30% {
+          transform: translateY(-10px);
+        }
+      }
+
+      /* Suggestion chips */
+      .suggestion-chips {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+
+      .chip {
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 30px;
+        padding: 8px 15px;
+        color: #94a3b8;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        white-space: nowrap;
+      }
+
+      .chip:hover {
+        background: rgba(168, 85, 247, 0.2);
+        color: white;
+        border-color: #a78bfa;
+        transform: translateY(-2px);
+      }
+    </style>
+  </head>
+  <body>
+    <container>
+      <div class="box-display">
+        <div class="logo-img">
+          <img
+            src="https://img.sanishtech.com/u/2a8c51e11b25cb8d981378842d52866c.png"
+            alt="lologo"
+          />
+        </div>
+        <div class="logo-name">
+          <div class="nickname">
+            <p>Mitcu</p>
+          </div>
+          <div class="description">
+            <p>Digital Code | Back-End Dev</p>
+          </div>
+        </div>
+        <div class="icons">
+          <a href="https://www.instagram.com/m1tcu_?igsh=NWN5MWJiNzRrZzg=">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@mitcu_?_r=1&_t=ZS-93wP35Cgdcn">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://github.com/wiwikencyus">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://open.spotify.com/playlist/4iv8LOjj351efArmk69bK0?si=-Eq6CuMtT4SxTnIso3CaPQ"
+          >
+            <i class="fa-brands fa-spotify"></i>
+          </a>
+        </div>
+        <div class="bttn">
+          <button id="portfolio">
+            <i class="fa-solid fa-briefcase"></i> My Portfolio
+          </button>
+          <button id="ai">
+            <i class="fa-solid fa-robot"></i> Ngobrol Dengan Ai
+          </button>
+          <button id="Trakteer">
+            <i class="fa-solid fa-cup-straw"></i> Trakteer
+          </button>
+          <button id="copyDc">
+            <i class="fa-brands fa-discord"></i> Copy Discord Username
+          </button>
+        </div>
+        <footer>© 2026 Mitcu All rights reserved</footer>
+      </div>
+    </container>
+
+    <!-- Chat Box Overlay -->
+    <div class="chat-overlay" id="chatOverlay">
+      <div class="chat-container">
+        <div class="chat-header">
+          <div class="chat-avatar">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div class="chat-title">
+            <h3>Assistant</h3>
+            <div class="chat-status">
+              <span class="status-dot"></span>
+              <span>Online</span>
+            </div>
+          </div>
+          <button class="close-chat" id="closeChat">
+            <i class="fa-solid fa-times"></i>
+          </button>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+          <!-- Messages akan ditambahkan via JavaScript -->
+          <div class="message bot">
+            <div class="message-avatar">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="message-content">
+              Halo! Ada yang bisa saya bantu?
+              <div class="message-time">
+                <i class="fa-regular fa-clock"></i> sekarang
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Suggestion Chips -->
+        <div class="suggestion-chips" id="suggestionChips">
+          <span class="chip" data-message="Halo, apa kabar?">👋 Halo</span>
+          <span class="chip" data-message="Jelaskan tentang AI">🤖 Apa itu AI?</span>
+          <span class="chip" data-message="Buatkan puisi pendek">📝 Puisi</span>
+          <span class="chip" data-message="Tips belajar coding">💻 Tips Coding</span>
+          <span class="chip" data-message="Cerita lucu">😄 Cerita</span>
+        </div>
+
+        <div class="chat-input-area">
+          <input type="text" class="chat-input" id="chatInput" placeholder="Tanya sesuatu ke Mitcu..." autocomplete="off">
+          <button class="send-btn" id="sendMessage">
+            <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const chatOverlay = document.getElementById('chatOverlay');
+      const chatMessages = document.getElementById('chatMessages');
+      const chatInput = document.getElementById('chatInput');
+      const sendBtn = document.getElementById('sendMessage');
+      const closeBtn = document.getElementById('closeChat');
+      const aiBtn = document.getElementById('ai');
+      const suggestionChips = document.querySelectorAll('.chip');
+
+      // Function to add message to chat
+      function addMessage(message, isUser = false) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `message ${isUser ? 'user' : 'bot'}`;
+        
+        const time = new Date();
+        const timeString = time.getHours() + ':' + String(time.getMinutes()).padStart(2, '0');
+        
+        messageDiv.innerHTML = `
+          <div class="message-avatar">
+            <i class="fa-solid ${isUser ? 'fa-user' : 'fa-robot'}"></i>
+          </div>
+          <div class="message-content">
+            ${message}
+            <div class="message-time">
+              <i class="fa-regular fa-clock"></i> ${timeString}
+            </div>
+          </div>
+        `;
+        
+        chatMessages.appendChild(messageDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      // Function to show typing indicator
+      function showTypingIndicator() {
+        const indicator = document.createElement('div');
+        indicator.className = 'message bot';
+        indicator.id = 'typingIndicator';
+        indicator.innerHTML = `
+          <div class="message-avatar">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <div class="typing-indicator">
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+            <span class="typing-dot"></span>
+          </div>
+        `;
+        chatMessages.appendChild(indicator);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      // Function to remove typing indicator
+      function removeTypingIndicator() {
+        const indicator = document.getElementById('typingIndicator');
+        if (indicator) {
+          indicator.remove();
+        }
+      }
+
+      // MAIN FUNCTION: Get response from Groq API
+      async function getGeminiResponse(userMessage) {
+        try {
+          const response = await fetch("/api/generate", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              prompt: userMessage
+            })
+          });
+
+          if (!response.ok) {
+            throw new Error('Gagal terhubung ke Groq API');
+          }
+
+          const data = await response.json();
+          return data.text;
+          
+        } catch (error) {
+          console.error("Gemini Error:", error);
+          return "Maaf, saya sedang bermasalah teknis. Coba lagi nanti ya! 🙏";
+        }
+      }
+
+      // Process user message with Gemini
+      async function processUserMessage(message) {
+        if (message.trim() === '') return;
+        
+        // Add user message
+        addMessage(message, true);
+        
+        // Clear input
+        chatInput.value = '';
+        
+        // Show typing indicator
+        showTypingIndicator();
+        
+        // Get response from Gemini
+        const response = await getGeminiResponse(message);
+        
+        // Remove typing indicator and show response
+        removeTypingIndicator();
+        addMessage(response);
+      }
+
+      // Event Listeners
+      aiBtn.addEventListener('click', () => {
+        chatOverlay.classList.add('show');
+        chatInput.focus();
+      });
+
+      closeBtn.addEventListener('click', () => {
+        chatOverlay.classList.remove('show');
+      });
+
+      sendBtn.addEventListener('click', () => {
+        processUserMessage(chatInput.value);
+      });
+
+      chatInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+          processUserMessage(chatInput.value);
+        }
+      });
+
+      chatOverlay.addEventListener('click', (e) => {
+        if (e.target === chatOverlay) {
+          chatOverlay.classList.remove('show');
+        }
+      });
+
+      // Suggestion chips - SEMUA PAKAI GEMINI
+      suggestionChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          const message = chip.getAttribute('data-message');
+          processUserMessage(message);
+        });
+      });
+
+      // Other buttons
+      document.getElementById('portfolio').addEventListener('click', () => {
+        alert('Fitur portfolio akan segera hadir')
+      });
+
+      document.getElementById('Trakteer').addEventListener('click', () => {
+        alert('Fitur Trakteer akan segera hadir!');
+      });
+
+      document.getElementById('copyDc').addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText('mitcu_discord');
+          alert('Discord username berhasil di-copy!');
+        } catch (err) {
+          alert('Gagal meng-copy username');
+        }
+      });
+
+      chatOverlay.addEventListener('wheel', (e) => {
+        e.preventDefault();
+      }, { passive: false });
+    </script>
+  </body>
+</html>
